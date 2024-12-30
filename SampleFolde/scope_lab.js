@@ -4,8 +4,8 @@ let globalLet = "Je suis aussi global, mais avec une portée let";
 const globalConst = "Je suis une constante globale";
 
 //Block Scope
-console.log(blockVar);
-console.log(blockLet);
+// console.log(blockVar);
+// console.log(blockLet);
 {
 // Portée de bloc
 var blockVar = "Je suis une var avec portée de bloc";
@@ -24,6 +24,19 @@ function show(){
     }
     show();
     
-    console.log(functionVar); // Lance une ReferenceError
-    console.log(functionLet); // Lance une ReferenceError
-    console.log(functionConst); // Lance une ReferenceError
+    // console.log(functionVar); // Lance une ReferenceError
+    // console.log(functionLet); // Lance une ReferenceError
+    // console.log(functionConst); // Lance une ReferenceError
+
+    {
+        let loveLet = 5;
+        const loveConst  = 3;
+        var loveVar = 8;
+
+        // console.log(loveLet)
+        // console.log(loveConst)
+        // console.log(loveVar)
+    }
+        console.log(loveLet)
+        console.log(loveConst)
+        console.log(loveVar)
